@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Magazines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>EM Magazines</h1>
+        <input type="text" id="search-bar" placeholder="Search magazines..." class="search-bar">
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </nav>
+    
+    <header>
+        <p>Find great magazines on many topics.</p>
+    </header>
+    
+    <main>
+        <section id="sports" class="category slide-in sports-accent" data-category="sports">
+            <h2>🏆 Sports</h2>
+            <div class="magazine-card" data-title="Sports Illustrated">
+                <img src="https://cdn.pixabay.com/photo/2016/05/02/10/13/soccer-1366737_1280.jpg" alt="Soccer Match">
+                <h3>Sports Illustrated</h3>
+                <p>Detailed stories about sports like soccer and basketball.</p>
+                <a href="https://www.si.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="SLAM Magazine">
+                <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/basketball-2605248_1280.jpg" alt="Basketball Court">
+                <h3>SLAM Magazine</h3>
+                <p>All about basketball players and fun.</p>
+                <a href="https://www.slamonline.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="ESPN Magazine">
+                <img src="https://cdn.pixabay.com/photo/2016/05/02/10/13/football-1366738_1280.jpg" alt="Football Field">
+                <h3>ESPN Magazine</h3>
+                <p>News on all sports, from football to tennis.</p>
+                <a href="https://www.espn.com/espn/magazine/" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="bangladesh" class="category slide-in bangladesh-accent" data-category="bangladesh">
+            <h2>🇧🇩 Bangladesh</h2>
+            <div class="magazine-card" data-title="Prothom Alo Magazine">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Dhaka_Skyline.jpg" alt="Dhaka Cityscape">
+                <h3>Prothom Alo Magazine</h3>
+                <p>News and stories from Bangladesh.</p>
+                <a href="https://www.prothomalo.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Shakti Magazine">
+                <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/bangladesh-3082387_1280.jpg" alt="Bangladeshi Culture">
+                <h3>Shakti Magazine</h3>
+                <p>Helps women and shares Bangladesh culture.</p>
+                <a href="https://www.shakti.com.bd" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Bangladesh Today">
+                <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/bangladesh-3082388_1280.jpg" alt="Bangladeshi Landscape">
+                <h3>Bangladesh Today</h3>
+                <p>Updates on Bangladesh life and events.</p>
+                <a href="https://www.bangladeshtoday.net" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="international" class="category slide-in international-accent" data-category="international">
+            <h2>🌍 World News</h2>
+            <div class="magazine-card" data-title="The Economist">
+                <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/world-2694738_1280.jpg" alt="Global News">
+                <h3>The Economist</h3>
+                <p>Weekly news on world money and politics.</p>
+                <a href="https://www.economist.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Foreign Affairs">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/earth-1868626_1280.jpg" alt="International Affairs">
+                <h3>Foreign Affairs</h3>
+                <p>Talks about world countries and rules.</p>
+                <a href="https://www.foreignaffairs.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="BBC News Magazine">
+                <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/news-2694739_1280.jpg" alt="News Broadcast">
+                <h3>BBC News Magazine</h3>
+                <p>Global news and deep stories.</p>
+                <a href="https://www.bbc.com/news/magazine" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="health" class="category slide-in health-accent" data-category="health">
+            <h2>💚 Health</h2>
+            <div class="magazine-card" data-title="Health Magazine">
+                <img src="https://cdn.pixabay.com/photo/2017/08/06/12/52/woman-2593366_1280.jpg" alt="Healthy Lifestyle">
+                <h3>Health Magazine</h3>
+                <p>Tips for staying fit and happy.</p>
+                <a href="https://www.health.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Men's Health">
+                <img src="https://cdn.pixabay.com/photo/2016/11/22/19/08/hands-1850124_1280.jpg" alt="Nutrition">
+                <h3>Men's Health</h3>
+                <p>Guides for body and mind health.</p>
+                <a href="https://www.menshealth.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Prevention">
+                <img src="https://cdn.pixabay.com/photo/2017/08/06/12/52/healthy-2593367_1280.jpg" alt="Wellness">
+                <h3>Prevention</h3>
+                <p>Ideas to prevent health problems.</p>
+                <a href="https://www.prevention.com" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="cooking" class="category slide-in cooking-accent" data-category="cooking">
+            <h2>🍳 Cooking</h2>
+            <div class="magazine-card" data-title="Bon Appétit">
+                <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg" alt="Delicious Food">
+                <h3>Bon Appétit</h3>
+                <p>Recipes and fun cooking ideas.</p>
+                <a href="https://www.bonappetit.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Saveur">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/bread-1238296_1280.jpg" alt="Baking">
+                <h3>Saveur</h3>
+                <p>Foods from around the world.</p>
+                <a href="https://www.saveur.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Food & Wine">
+                <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/dinner-2009591_1280.jpg" alt="Wine and Food">
+                <h3>Food & Wine</h3>
+                <p>Wine tips and tasty recipes.</p>
+                <a href="https://www.foodandwine.com" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="technology" class="category slide-in technology-accent" data-category="technology">
+            <h2>💻 Tech</h2>
+            <div class="magazine-card" data-title="Wired">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.jpg" alt="Tech Gadgets">
+                <h3>Wired</h3>
+                <p>New ideas in tech and science.</p>
+                <a href="https://www.wired.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="MIT Technology Review">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="AI Future">
+                <h3>MIT Technology Review</h3>
+                <p>Future tech and its effects.</p>
+                <a href="https://www.technologyreview.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="TechCrunch">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/laptop-1873855_1280.jpg" alt="Laptop">
+                <h3>TechCrunch</h3>
+                <p>Startup news and tech updates.</p>
+                <a href="https://techcrunch.com" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="travel" class="category slide-in travel-accent" data-category="travel">
+            <h2>✈️ Travel</h2>
+            <div class="magazine-card" data-title="National Geographic Traveler">
+                <img src="https://cdn.pixabay.com/photo/2017/08/01/20/06/travel-2569270_1280.jpg" alt="Adventure Travel">
+                <h3>National Geographic Traveler</h3>
+                <p>Places and tips for trips.</p>
+                <a href="https://www.nationalgeographic.com/travel" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Condé Nast Traveler">
+                <img src="https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_1280.jpg" alt="Luxury Travel">
+                <h3>Condé Nast Traveler</h3>
+                <p>Fancy travel guides.</p>
+                <a href="https://www.cntraveler.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Lonely Planet">
+                <img src="https://cdn.pixabay.com/photo/2017/08/01/20/06/backpack-2569271_1280.jpg" alt="Backpacking">
+                <h3>Lonely Planet</h3>
+                <p>Guides for world adventures.</p>
+                <a href="https://www.lonelyplanet.com" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="fashion" class="category slide-in fashion-accent" data-category="fashion">
+            <h2>👗 Fashion</h2>
+            <div class="magazine-card" data-title="Vogue">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/06/46/adult-1868750_1280.jpg" alt="Fashion Runway">
+                <h3>Vogue</h3>
+                <p>Clothes and style trends.</p>
+                <a href="https://www.vogue.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Elle">
+                <img src="https://cdn.pixabay.com/photo/2017/08/01/08/29/woman-2563491_1280.jpg" alt="Street Fashion">
+                <h3>Elle</h3>
+                <p>Fashion and beauty for women.</p>
+                <a href="https://www.elle.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="GQ">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/06/46/fashion-1868751_1280.jpg" alt="Men's Fashion">
+                <h3>GQ</h3>
+                <p>Style for men and culture.</p>
+                <a href="https://www.gq.com" target="_blank">Read More</a>
+            </div>
+        </section>
+        
+        <section id="entertainment" class="category slide-in entertainment-accent" data-category="entertainment">
+            <h2>🎬 Entertainment</h2>
+            <div class="magazine-card" data-title="Variety">
+                <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/movie-2697307_1280.jpg" alt="Movie Theater">
+                <h3>Variety</h3>
+                <p>News on movies, TV shows, and celebrities.</p>
+                <a href="https://variety.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Rolling Stone">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/04/19/music-1867577_1280.jpg" alt="Music Concert">
+                <h3>Rolling Stone</h3>
+                <p>Music, pop culture, and artist stories.</p>
+                <a href="https://www.rollingstone.com" target="_blank">Read More</a>
+            </div>
+            <div class="magazine-card" data-title="Entertainment Weekly">
+                <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/celebrity-2697308_1280.jpg" alt="Celebrity">
+                <h3>Entertainment Weekly</h3>
+                <p>TV, movies, and entertainment news.</p>
+                <a href="https://ew.com" target="_blank">Read More</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 EM Magazines. Enjoy reading! Share this website to your close friend or family to easy their life in online</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
